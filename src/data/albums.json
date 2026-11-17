@@ -1,0 +1,38 @@
+[
+  {
+    "id": "al1",
+    "artistId": "a1",
+    "title": "Currents",
+    "releaseDate": "2015-07-17",
+    "type": "Album",
+    "coverArtUrl": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=300&q=80",
+    "externalIds": { "musicbrainz": "b1", "qobuz": "q-al1", "deezer": "d-al1", "spotify": "s-al1" }
+  },
+  {
+    "id": "al2",
+    "artistId": "a1",
+    "title": "The Slow Rush",
+    "releaseDate": "2020-02-14",
+    "type": "Album",
+    "coverArtUrl": "https://images.unsplash.com/photo-1494232410401-ad00d5433cfa?w=300&q=80",
+    "externalIds": { "musicbrainz": "b2", "qobuz": "q-al2", "deezer": "d-al2" }
+  },
+  {
+    "id": "al3",
+    "artistId": "a1",
+    "title": "InnerSpeaker",
+    "releaseDate": "2010-05-21",
+    "type": "Album",
+    "coverArtUrl": "https://images.unsplash.com/photo-1483412033650-1015ddeb83d1?w=300&q=80",
+    "externalIds": { "musicbrainz": "b3", "qobuz": "q-al3" }
+  },
+  {
+    "id": "al4",
+    "artistId": "a2",
+    "title": "OK Computer",
+    "releaseDate": "1997-05-21",
+    "type": "Album",
+    "coverArtUrl": "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=300&q=80",
+    "externalIds": { "musicbrainz": "b4", "qobuz": "q-al4", "deezer": "d-al4", "spotify": "s-al4" }
+  }
+]

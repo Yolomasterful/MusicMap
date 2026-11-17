@@ -1,0 +1,22 @@
+[
+  { "id": "t1",  "albumId": "al1", "title": "Let It Happen",                "trackNumber": 1, "duration": 467, "externalIds": { "qobuz": "q-t1",  "deezer": "d-t1",  "spotify": "s-t1"  } },
+  { "id": "t2",  "albumId": "al1", "title": "Nangs",                        "trackNumber": 2, "duration": 108, "externalIds": { "qobuz": "q-t2" } },
+  { "id": "t3",  "albumId": "al1", "title": "The Moment",                   "trackNumber": 3, "duration": 245, "externalIds": { "qobuz": "q-t3",  "deezer": "d-t3" } },
+  { "id": "t4",  "albumId": "al1", "title": "The Less I Know the Better",   "trackNumber": 4, "duration": 216, "externalIds": { "qobuz": "q-t4",  "deezer": "d-t4",  "spotify": "s-t4" } },
+  { "id": "t5",  "albumId": "al1", "title": "Past Life",                    "trackNumber": 5, "duration": 229, "externalIds": { "qobuz": "q-t5" } },
+
+  { "id": "t6",  "albumId": "al2", "title": "One More Year",                "trackNumber": 1, "duration": 322, "externalIds": { "qobuz": "q-t6",  "deezer": "d-t6" } },
+  { "id": "t7",  "albumId": "al2", "title": "Borderline",                   "trackNumber": 2, "duration": 237, "externalIds": { "qobuz": "q-t7",  "deezer": "d-t7" } },
+  { "id": "t8",  "albumId": "al2", "title": "Posthumous Forgiveness",       "trackNumber": 3, "duration": 366, "externalIds": { "qobuz": "q-t8" } },
+
+  { "id": "t9",  "albumId": "al4", "title": "Airbag",                       "trackNumber": 1, "duration": 284, "externalIds": { "qobuz": "q-t9",  "deezer": "d-t9",  "spotify": "s-t9" } },
+  { "id": "t10", "albumId": "al4", "title": "Paranoid Android",             "trackNumber": 2, "duration": 387, "externalIds": { "qobuz": "q-t10", "deezer": "d-t10", "spotify": "s-t10" } },
+  { "id": "t11", "albumId": "al4", "title": "Subterranean Homesick Alien",  "trackNumber": 3, "duration": 267, "externalIds": { "qobuz": "q-t11" } },
+  { "id": "t12", "albumId": "al4", "title": "Exit Music (For a Film)",      "trackNumber": 4, "duration": 264, "externalIds": { "qobuz": "q-t12", "deezer": "d-t12" } },
+  { "id": "t13", "albumId": "al4", "title": "Karma Police",                 "trackNumber": 6, "duration": 261, "externalIds": { "qobuz": "q-t13", "deezer": "d-t13", "spotify": "s-t13" } },
+
+  { "id": "t14", "albumId": "al5", "title": "15 Step",                      "trackNumber": 1, "duration": 237, "externalIds": { "qobuz": "q-t14", "deezer": "d-t14" } },
+  { "id": "t15", "albumId": "al5", "title": "Bodysnatchers",                "trackNumber": 2, "duration": 242, "externalIds": { "qobuz": "q-t15" } },
+  { "id": "t16", "albumId": "al5", "title": "Nude",                         "trackNumber": 3, "duration": 255, "externalIds": { "qobuz": "q-t16", "deezer": "d-t16", "spotify": "s-t16" } },
+  { "id": "t17", "albumId": "al5", "title": "Weird Fishes / Arpeggi",       "trackNumber": 4, "duration": 318, "externalIds": { "qobuz": "q-t17" } }
+]

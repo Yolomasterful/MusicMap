@@ -1,16 +1,20 @@
 {
-  "name": "musicmap",
-  "version": "0.5.0",
+  "name": "musicbridge",
   "private": true,
+  "version": "0.1.0",
+  "type": "module",
   "scripts": {
-    "start": "serve -l 8000 ."
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "@babel/standalone": "^7.25.6"
+    "react-router-dom": "^6.26.2"
   },
   "devDependencies": {
-    "serve": "^14.2.4"
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.8"
   }
 }

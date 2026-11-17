@@ -1,0 +1,30 @@
+[
+  {
+    "id": "a1",
+    "name": "Tame Impala",
+    "type": "Group",
+    "country": "AU",
+    "beginDate": "2007",
+    "imageUrl": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&q=80",
+    "externalIds": {
+      "musicbrainz": "63aa26c3-d59b-4da4-84ac-716b54f1ef4d",
+      "qobuz": "12345",
+      "deezer": "2468",
+      "spotify": "5INjqkS1o8h1imAzPqGZBb"
+    }
+  },
+  {
+    "id": "a2",
+    "name": "Radiohead",
+    "type": "Group",
+    "country": "GB",
+    "beginDate": "1985",
+    "imageUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&q=80",
+    "externalIds": {
+      "musicbrainz": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+      "qobuz": "67890",
+      "deezer": "1357",
+      "spotify": "4Z8W4fKeB5YxbusRsdQVPb"
+    }
+  }
+]

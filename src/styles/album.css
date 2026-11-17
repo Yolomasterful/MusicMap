@@ -1,0 +1,83 @@
+.album-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.album-header {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-end;
+    margin-bottom: 1.5rem;
+}
+.album-header .cover {
+    width: 180px;
+    height: 180px;
+    border-radius: var(--radius);
+    object-fit: cover;
+    box-shadow: var(--shadow);
+    flex-shrink: 0;
+}
+
+.album-aside {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    position: sticky;
+    top: 90px;
+}
+
+.service-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+.service-list li {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem .75rem;
+    border-radius: 8px;
+    background: var(--surface-2);
+    font-size: .92rem;
+}
+.service-list li.missing { opacity: .55; }
+.service-list li a { text-decoration: none; color: var(--text); }
+.service-list li a:hover { color: var(--accent); }
+
+.track-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+.track-table th,
+.track-table td {
+    text-align: left;
+    padding: .6rem .5rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+}
+.track-table th {
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: var(--muted);
+    font-weight: 600;
+}
+.track-listen .service-badge {
+    margin-right: .25rem;
+    margin-bottom: .2rem;
+}
+
+@media (max-width: 768px) {
+    .album-layout { grid-template-columns: 1fr; }
+    .album-aside  { position: static; }
+    .album-header { flex-direction: column; align-items: flex-start; }
+    .album-header .cover { width: 140px; height: 140px; }
+    .track-table th:nth-child(3),
+    .track-table td:nth-child(3) { display: none; }
+}

@@ -1,0 +1,6 @@
+[
+  { "id": "musicbrainz", "name": "MusicBrainz", "color": "#BA478F", "baseUrl": "https://musicbrainz.org" },
+  { "id": "qobuz",       "name": "Qobuz",       "color": "#0C1E3C", "baseUrl": "https://www.qobuz.com" },
+  { "id": "deezer",      "name": "Deezer",      "color": "#A238FF", "baseUrl": "https://www.deezer.com" },
+  { "id": "spotify",     "name": "Spotify",     "color": "#1DB954", "baseUrl": "https://open.spotify.com" }
+]
