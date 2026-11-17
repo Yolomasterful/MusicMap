@@ -1,0 +1,579 @@
+:root {
+    --bg: #0f0f14;
+    --surface: #1a1a24;
+    --surface-2: #22222f;
+    --border: #2a2a3a;
+    --text: #f1f1f5;
+    --muted: #9a9aa8;
+    --accent: #53b3ca;
+    --radius: 12px;
+    --shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.35rem;
+    margin: 1.5rem 0 0.75rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+p {
+    color: var(--muted);
+}
+
+.muted {
+    color: var(--muted);
+}
+
+.page {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--muted);
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: var(--text);
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: rgba(15, 15, 20, 0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.logo-mark {
+    color: var(--accent);
+    font-size: 1.3rem;
+}
+
+.main-nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main-nav a {
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.main-nav a:hover {
+    color: var(--text);
+}
+
+.site-footer {
+    padding: 1.5rem;
+    text-align: center;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 3rem 1rem 2.5rem;
+    border-radius: var(--radius);
+    background:
+            linear-gradient(180deg, rgba(162, 56, 255, 0.15), rgba(0, 0, 0, 0)),
+            radial-gradient(ellipse at top, #1c1c2c, var(--bg));
+    border: 1px solid var(--border);
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.hero p {
+    max-width: 640px;
+    margin: 0.75rem auto 1.5rem;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    color: var(--text);
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    outline: none;
+    display: block;
+}
+
+.search-input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(162, 56, 255, 0.25);
+}
+
+.artist-grid,
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+
+.artist-card,
+.album-card {
+    display: block;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.artist-card:hover,
+.album-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+}
+
+.artist-card img,
+.album-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 0.75rem;
+}
+
+.card-body h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.15rem;
+}
+
+.card-body p {
+    font-size: 0.8rem;
+}
+
+.service-dots {
+    display: flex;
+    gap: 0.25rem;
+    margin-top: 0.5rem;
+}
+
+.service-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.service-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.service-badge.mini {
+    padding: 2px 6px;
+    font-size: 0.7rem;
+}
+
+.service-badge.missing {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.service-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.service-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    background: var(--surface-2);
+    font-size: 0.92rem;
+}
+
+.service-list li.missing {
+    opacity: 0.55;
+}
+
+.service-list li a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.album-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.album-header {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-end;
+    margin-bottom: 1.5rem;
+}
+
+.album-header .cover {
+    width: 180px;
+    height: 180px;
+    border-radius: var(--radius);
+    object-fit: cover;
+    box-shadow: var(--shadow);
+    flex-shrink: 0;
+}
+
+.album-aside {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    position: sticky;
+    top: 90px;
+}
+
+.track-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.track-table th,
+.track-table td {
+    text-align: left;
+    padding: 0.6rem 0.5rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+}
+
+.track-table th {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    font-weight: 600;
+}
+
+.track-table .track-links {
+    display: flex;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+}
+
+.artist-hero {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1.5rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.artist-hero img {
+    width: 160px;
+    height: 160px;
+    border-radius: var(--radius);
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.artist-hero-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.service-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.75rem;
+}
+
+.discography-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.controls {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.controls select {
+    padding: 0.4rem 0.6rem;
+    background: var(--surface-2);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.variant-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.variant-toggle input {
+    accent-color: var(--accent);
+}
+
+.variant-list {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.variant-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.15s;
+}
+
+.variant-row:hover {
+    border-color: var(--accent);
+}
+
+.variant-row .meta {
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.variant-row .badges {
+    display: flex;
+    gap: 0.3rem;
+    flex-wrap: wrap;
+}
+
+.variant-row.canonical {
+    border-left: 3px solid var(--accent);
+}
+
+.canonical-marker {
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-left: 0.5rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.editions {
+    margin-top: 2.5rem;
+}
+
+.editions-toggle {
+    padding: 0.5rem 1rem;
+    background: var(--surface-2);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.editions-toggle:hover {
+    border-color: var(--accent);
+}
+
+.editions-list {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.about {
+    max-width: 720px;
+}
+
+.about h2 {
+    margin-top: 1.75rem;
+}
+
+.about p {
+    margin-top: 0.5rem;
+    color: var(--text);
+}
+
+.about code {
+    background: var(--surface-2);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.empty-state,
+.error-state {
+    padding: 2rem 1rem;
+    text-align: center;
+    background: var(--surface);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius);
+    margin-top: 1rem;
+}
+
+.error-state {
+    border-color: #b00020;
+    color: #ffb4b4;
+}
+
+.loading {
+    color: var(--muted);
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .album-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .album-aside {
+        position: static;
+    }
+
+    .album-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .album-header .cover {
+        width: 140px;
+        height: 140px;
+    }
+
+    .track-table th:nth-child(3),
+    .track-table td:nth-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        gap: 0.4rem;
+        width: 100%;
+    }
+
+    .artist-hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .variant-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
