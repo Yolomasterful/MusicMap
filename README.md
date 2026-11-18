@@ -1,7 +1,7 @@
 # MusicMap
 
 A single-page React app that maps MusicBrainz artists and albums to their
-equivalents on Deezer (and optionally Qobuz). No build tools, no `npm install`.
+equivalents on Deezer (and optionally Qobuz)..
 
 ## Running the service
 
